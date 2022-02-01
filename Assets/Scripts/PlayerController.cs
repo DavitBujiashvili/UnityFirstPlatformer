@@ -27,10 +27,12 @@ public class PlayerController : MonoBehaviour
 
         if(Input.GetAxisRaw("Horizontal")>0){
             rb.velocity=new Vector3(MoveSpeed,rb.velocity.y,0f); 
+            transform.localScale=Vector3.one;
         }
 
         if(Input.GetAxisRaw("Horizontal")<0){
             rb.velocity=new Vector3(-MoveSpeed,rb.velocity.y,0f);
+            transform.localScale=new Vector3(-1f,1f,1f);
         }
 
         if(Input.GetAxisRaw("Horizontal")==0){
