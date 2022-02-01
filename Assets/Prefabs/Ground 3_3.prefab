@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4920819276125708898}
   - component: {fileID: 1092667473314832533}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: sprites_32 (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8950225647044270100}
   - component: {fileID: 2342192474164388992}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: sprites_32 (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -174,7 +174,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4118950693958437572}
   - component: {fileID: 5930718929932757145}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: sprites_123
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -256,7 +256,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3933051530568429740}
   - component: {fileID: 8043484455067152552}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: sprites_123 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -338,7 +338,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4772349380240471136}
   - component: {fileID: 8107432659493573543}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: sprites_32 (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -420,7 +420,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6189529023972646496}
   - component: {fileID: 3911800923188783975}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ground 3_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -486,7 +486,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6565183786206816115}
   - component: {fileID: 4668194500796486117}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: sprites_32 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -568,7 +568,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6856560233013227532}
   - component: {fileID: 2755300211674949176}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: sprites_32 (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -650,7 +650,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4384859232238294250}
   - component: {fileID: 4863410019769533841}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: sprites_32 (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -732,7 +732,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5007832026770992773}
   - component: {fileID: 7366329384030210294}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: sprites_123 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
