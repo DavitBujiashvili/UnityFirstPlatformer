@@ -46,4 +46,10 @@ public class PlayerController : MonoBehaviour
         animator.SetBool("isGrounded",IsGrounded);
         
     }
+
+    private void OnTriggerEnter2D(Collider2D other) {
+        if(other.tag=="KillPlane"){
+            gameObject.SetActive(false);
+        }
+    }
 }
