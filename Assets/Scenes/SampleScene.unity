@@ -524,7 +524,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MoveSpeed: 5
   JumpSpeed: 10
-  IsJumping: 0
   IsGrounded: 0
   JumpPoint: {fileID: 1335006556}
   radius: 1.1
