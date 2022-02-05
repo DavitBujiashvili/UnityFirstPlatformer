@@ -13,11 +13,17 @@ public class PlayerController : MonoBehaviour
     public float radius;
     public LayerMask Mask;
     private Rigidbody2D rb;
+
+    private Vector3 respawnPoint;
+
+    private LevelManager levelManager;
     // Start is called before the first frame update
     void Start()
     {
         rb=GetComponent<Rigidbody2D>();
         animator=GetComponent<Animator>();
+        respawnPoint=gameObject.transform.position;
+        levelManager=FindObjectOfType<LevelManager>();
     }
 
     // Update is called once per frame
@@ -50,6 +56,16 @@ public class PlayerController : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other) {
         if(other.tag=="KillPlane"){
             gameObject.SetActive(false);
+            levelManager.Respawn();
         }
+
+        if(other.tag=="ChekPoint"){
+            respawnPoint=other.transform.position;
+        }
+    }
+
+    public void Respawn(){
+        gameObject.SetActive(true);
+        gameObject.transform.position=respawnPoint;
     }
 }
