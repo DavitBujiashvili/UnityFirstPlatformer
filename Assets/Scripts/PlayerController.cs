@@ -59,6 +59,11 @@ public class PlayerController : MonoBehaviour
             levelManager.Respawn();
         }
 
+         if(other.tag=="Hurtable"){
+            gameObject.SetActive(false);
+            levelManager.Respawn();
+        }
+
         if(other.tag=="ChekPoint"){
             respawnPoint=other.transform.position;
         }
