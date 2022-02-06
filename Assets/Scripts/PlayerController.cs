@@ -16,6 +16,8 @@ public class PlayerController : MonoBehaviour
 
     private Vector3 respawnPoint;
 
+    public GameObject burst;
+
     private LevelManager levelManager;
     // Start is called before the first frame update
     void Start()
@@ -60,6 +62,7 @@ public class PlayerController : MonoBehaviour
         }
 
          if(other.tag=="Hurtable"){
+            Instantiate(burst,gameObject.transform.position,gameObject.transform.rotation);
             gameObject.SetActive(false);
             levelManager.Respawn();
         }
