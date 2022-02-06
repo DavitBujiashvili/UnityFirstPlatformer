@@ -64,6 +64,18 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    private void OnCollisionEnter2D(Collision2D other) {
+        if(other.gameObject.tag=="MovingPlatform"){
+            gameObject.transform.parent=other.transform;
+        }
+    }
+
+     private void OnCollisionExit2D(Collision2D other) {
+        if(other.gameObject.tag=="MovingPlatform"){
+            gameObject.transform.parent=null;
+        }
+    }
+
     public void Respawn(){
         gameObject.SetActive(true);
         gameObject.transform.position=respawnPoint;
