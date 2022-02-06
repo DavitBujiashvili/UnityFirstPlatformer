@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7259378059615494072}
   - component: {fileID: 8691123694452965492}
   - component: {fileID: 5557344771947129124}
+  - component: {fileID: 1536435967632696940}
   m_Layer: 0
   m_Name: DestroyBurs
   m_TagString: Untagged
@@ -4862,3 +4863,16 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!114 &1536435967632696940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7225801661631763327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4822fae40dbce24c99363666fa3d5f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeTime: 1.1
