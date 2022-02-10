@@ -58,13 +58,20 @@ public class PlayerController : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other) {
         if(other.tag=="KillPlane"){
             gameObject.SetActive(false);
+            levelManager.ResetHealth();
             levelManager.Respawn();
         }
 
          if(other.tag=="Hurtable"){
-            Instantiate(burst,gameObject.transform.position,gameObject.transform.rotation);
-            gameObject.SetActive(false);
-            levelManager.Respawn();
+             if(levelManager.healthCount<=0){
+                Instantiate(burst,gameObject.transform.position,gameObject.transform.rotation);
+                gameObject.SetActive(false);
+                levelManager.ResetHealth();
+                levelManager.Respawn();
+             }else{
+                levelManager.TakeDamage(1);
+             }
+            
         }
 
         if(other.tag=="ChekPoint"){
